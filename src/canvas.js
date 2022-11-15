@@ -35,9 +35,8 @@ export default class Canvas {
 
 
 
-    this.bezier = new BezierCurve(this.gl, new Vec2(0, 0), new Vec2(1, 1), new Vec2(0, 0.5), new Vec2(1, 0.5), { n: 50 })
+    this.bezier = new BezierCurve(this.gl, new Vec2(0, 0), new Vec2(1, 1), new Vec2(0, 0.5), new Vec2(1, 0.5), { n: 10 })
     this.bezier.addToScene(this.scene)
-
   }
   init() {
     this.raf.run()
